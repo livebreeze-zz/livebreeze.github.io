@@ -18,12 +18,16 @@
           <li>
             {% include icon-github.html username=site.github_username %}
           </li>
-          {% endif %}          
+          {% endif %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-3">
         <p>{{ site.description }}</p>
+      </div>
+      
+       <div class="footer-col footer-col-12">
+        <p>Copyright &copy; {{ site.time | date: '%Y' }} by <a href="https://www.facebook.com/livebreeze" target="_blank">livebreeze</a></p>
       </div>
     </div>
 
