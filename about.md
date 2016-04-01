@@ -4,12 +4,26 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi, my name is Sean Chen.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Here is a place where I am writing and sharing about learning. 
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I am a Web developer live in Taichung, Taiwan.
+
+Major in C#, javascript, and MS SQL technology. 
+
+And use the framework like ASP.NET MVC, jQuery, angular js, nodejs.
+
+For now, I want to learn more about code development, and share what I know.
+
+So, welcome to share the world with me!
+
+---
+
+Hi 大家好，
+
+我是阿興，目前在台中任職 Web Developer，
+
+這邊部落格紀錄我的一些在開發上的學習過程，並且希望藉由分享，更進一步吸收所學，
+
+歡迎各位碼農們一起奮力耕耘技術!

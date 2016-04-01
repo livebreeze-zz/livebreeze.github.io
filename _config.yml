@@ -9,7 +9,7 @@
 title: livebreeze
 email: livebreeze@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Web dev the better world.
+  Develop the better world.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://livebreeze.github.io" # the base hostname & protocol for your site
 twitter_username: livebreeze1
