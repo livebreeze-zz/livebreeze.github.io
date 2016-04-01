@@ -49,11 +49,11 @@ categories: LearningNote
      
 在另外的 web site 想實現照片上傳的功能，結果改到後來突然上傳的檔案都只剩下 1KB
 
-![upload1kbFileError](/assets/images/upload1kbFileError.png)
+![upload1kbFileError](https://raw.githubusercontent.com/livebreeze/BlogImages/master/Images2016/upload1kbFileError.png)
 
 才發現在 ajax post 的地方，我要上傳的資料，因為亂 copy 別人的 solution，結果 data 在送出前經過 JSON.stringify 處理
 
-![upload1kbFileErrorCode](/assets/images/upload1kbFileErrorCode.png)
+![upload1kbFileErrorCode](https://raw.githubusercontent.com/livebreeze/BlogImages/master/Images2016/upload1kbFileErrorCode.png)
 
 一直懷疑到底是 browser 還是 server 哪邊傳輸有問題，原來是 JSON.stringify 這邊導致上傳資料被截斷成只有 1kb....   END
 
