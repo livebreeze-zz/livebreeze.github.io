@@ -10,7 +10,7 @@ categories: Jekyll
 雖然官方也有 [Guide](https://jekyllrb.com/docs/home/) 可以參考學習，不過都是英文... 讀起來有些睏，  
 所以就是一邊使用一邊查資料，從問題中學習 @_@a
 
-### 問題一: 為何我在 _posts 的文章沒有產生出來
+### 問題一：為何我在 _posts 的文章沒有產生出來
 檢查　post 開頭的文章時間設定是否偷跑到未來了，  
 假設目前時間是 `2016/04/02 20:12:00`，則 `2016/04/02 20:12:00` 之後的文章就不會產生出來 　　
         
@@ -24,10 +24,11 @@ categories: Jekyll
 上面這樣的文章設定就不會被 jekyll 產生出來，原因是 jekyll 有個 future-posts 的功能可以設定，  
 如果不想要這樣的設定，在 `_config.yml` 裡面增加 `future:true` 設定，  
 
-需要注意的是，這個 future-posts 的功能，所判斷的時間是標準時區時區，所以在台灣，請習慣在 post 的 date 設定加上 `+0800`
+需要注意的是，這個 future-posts 的功能，判斷的時間是標準時區，  
+所以在台灣，需要在 post 的 date 設定加上 `+0800` 判斷才會正確。
 
      date: 2016-04-02 22:08:00 +0800
 
-官方說明:  
+官方說明：  
 All my posts are gone! Where’d they go!Permalink  
 [http://jekyllrb.com/docs/upgrading/2-to-3/#future-posts](http://jekyllrb.com/docs/upgrading/2-to-3/#future-posts)
