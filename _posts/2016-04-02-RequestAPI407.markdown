@@ -10,7 +10,7 @@ categories: ASPNET
 
 使用 PostMan 或者直接使用 Browser 調用都可以正常返回 data，不過當改成使用 C# console application 卻沒有辦法調用。
 
-依照 msdn 實現 HttpWebRequest 程式碼
+依照 msdn 實現 HttpWebRequest 程式碼:
 
 {% highlight c# linenos %}
 // Create a request using a URL that can receive a post.
@@ -55,4 +55,4 @@ Howard 找到利用設定 app 的 bin/debug folder 裡面的 .exe.config 檔案�
 {% endhighlight %}  
 via: [https://chentiangemalc.wordpress.com/2014/09/15/case-of-the-system-net-webclient-407-proxy-authentication-required/](https://chentiangemalc.wordpress.com/2014/09/15/case-of-the-system-net-webclient-407-proxy-authentication-required/)
 
-原因猜測是 proxy 造成的影響，但是確切的原理，還需要更多的 web 知識來補足了
+猜測原因是 proxy 造成的影響，但是確切的原理，還需要更多的 web 知識來補足了
