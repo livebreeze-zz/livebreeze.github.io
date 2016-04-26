@@ -2,12 +2,17 @@
  * Site header
  */
 .site-header {
+    background-color: cadetblue;
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    
+    a.site-title, a.page-link {
+        color:azure;
+    }
 }
 
 .site-title {
@@ -175,7 +180,7 @@
     font-size: 20px;
 }
 
-.post-list {
+.post-list {    
     margin-left: 0;
     list-style: none;
 
@@ -199,8 +204,17 @@
 /**
  * Posts
  */
+ .post {
+     background-color: #fff;
+     padding: 2% 4% 4%;
+     margin-bottom:20px;
+     border-radius: 4px;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+ }
+ 
 .post-header {
     margin-bottom: $spacing-unit;
+    border-bottom: 1px solid #ddd;
 }
 
 .post-title {
