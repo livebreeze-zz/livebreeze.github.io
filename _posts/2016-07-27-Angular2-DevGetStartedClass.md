@@ -113,6 +113,7 @@ const 如果為物件，其底下的屬性是可以改的。
 
 #### let
 可多研究 let 的作用域影響，let 同一個區域範圍內，不允許重複宣告。  
+
 > 以 for 迴圈搭配 setTimeout 印出 i 值做範例
 迴圈計量變數用 var 與 let 的差別，for 迴圈初始化的 i 變數，使用 var 宣告的話會因為提升，印出最後一個值，但 let 宣告的話，在每一個迴圈內是獨立的變數 i, 不會受其他迴圈影響。
 
@@ -142,6 +143,7 @@ console.log(sentence);
 上 [typescript 官網](http://www.typescriptlang.org/play/index.html) 練習 TypeScript。
 
 *ts 語法*   
+
 - Array(簡單陣列型別)
 - Tuple(複合型別陣列型別) - 陣列裡面可規定不同的型別陣列
 - Enum (列舉)
@@ -153,20 +155,28 @@ console.log(sentence);
 
 
 ### 介面 Interface  
-interface 單純只用型別檢查，因為轉成 js 就會不見了。
-方法傳入的參數，如果是直接在方法裡面傳入物件實字表示法，ts 會不允許傳入多餘的參數，但如果是變數，就可以多傳入物件的屬性; 官方說明是，實字表示法這樣傳不一樣的參數，通常是打錯，而變數傳入多餘的參數，通常是擴增，所以會有這樣的驗證設計差別。
+interface 單純只用型別檢查，因為轉成 js 就會不見了。  
+
+方法傳入的參數，如果是直接在方法裡面傳入**物件實字表示法**，ts 會不允許傳入多餘參數，  
+但如果是將物件宣告為**變數**帶入，就可以通過檢查，可傳入帶有多餘參數的物件;   
+
+官方說明是，通過**實字表示法**這樣傳遞不一樣數量的參數，通常是打錯了，而宣告為變數傳入多餘的參數，則通常是擴增，所以會有這樣的驗證設計差別。
 
 
 ### 類別 class
-tip:   
-類別的裡面的方法，不需要 function 表示式，直接打方法名稱就可以了。   
-get set 存取子  
-[refactorix](https://marketplace.visualstudio.com/items?itemName=krizzdewizz.refactorix) 使用方法    
+
+> tip:   
+
+- 類別的裡面的方法，不需要 function 表示式，直接打方法名稱就可以了。
+- get set 存取子  
+[refactorix](https://marketplace.visualstudio.com/items?itemName=krizzdewizz.refactorix) 使用方法      
 `>X: property to get set`  
+
 **抽象類別**
 
 ### 泛型 Generics
-ts 會有自動型別推導，所以可以從傳入的參數自動推導出泛型的型別，就可以不用再使用方法的時候指定。  
+ts 會有自動型別推導，所以可以從傳入的參數自動推導出泛型的型別，就可以不用再使用方法的時候指定。
+
 - 泛型函式
 - 泛型介面
 - 泛型類別
