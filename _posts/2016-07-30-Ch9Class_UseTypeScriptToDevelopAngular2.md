@@ -70,7 +70,9 @@ Mainomponent
      - 針對參數
 
 # Start live demo
+
 ## 手動建立基礎開發環境
+
 1. 應用程式資料夾
 2. tsconfig.json
 3. package.json
@@ -94,9 +96,10 @@ Mainomponent
 使用 import 方式來載入
 
 ### 建立注入遠端資料 Component
+
 `import {Http, Response} from '@angular/http'`
-在 `constructor` 注入 Http`, 建立 angular component 的生命週期 functions,  
-建立 `ngOnInit()` 來載入遠端 json 資料。  
+
+在 `constructor` 注入 Http, 建立 angular component 的生命週期 functions, 建立 `ngOnInit()` 來載入遠端 json 資料。  
 
 在 HTML 元素上使用 `*ngFor="let post of posts` 用來 repeat 迴圈塞值。  
 
@@ -105,12 +108,14 @@ Mainomponent
 輸出 html tag, `[innerHtml]="post.summary"`
 
 ### two way binding 
-將值從外層傳到內層，`<input type="text" [(ngModel)]="keyword"` ...>，然後再 component 中，使用 keyword= xxx 就可以抓到了，輸出直接用 `{{keyword}}` 就可以輸出了。
+將值從外層傳到內層，`<input type="text" [(ngModel)]="keyword" ...>`，然後再 component 中，使用 keyword= xxx 就可以抓到了，輸出直接用 `{{keyword}}` 就可以輸出了。
+
 ```
 <posts 
    [search]="keyword"
 ></posts>
 ```
+
 連回 PostsComponent 宣告一個 search property 再透過 Decorator & Metadata 來宣告讓外面可以取得。
 
 ### 過濾的動作
