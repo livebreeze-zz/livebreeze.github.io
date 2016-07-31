@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "心得: Channel 9 - 使用 TypeScript 駕馭 Web 世界的脫韁野馬： 以 Angular 2 開發框架為例"
+title:  "[心得筆記] Channel 9 - 使用 TypeScript 駕馭 Web 世界的脫韁野馬： 以 Angular 2 開發框架為例"
 date:   2016-07-30 23:05 +0800
 categories: ClassReview
 ---
