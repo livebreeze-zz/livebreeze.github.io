@@ -15,9 +15,12 @@ categories: ClassNote
 
 上課前有兩堂的 zoom 會議課程，   
 第一堂是保哥的小助手介紹與安裝開發環境，包括 vs code, nodejs, npm 一些相關套件的基本的安裝與操作等等。  
-第二堂是保哥見紹 **Angular 2 相關工具**, **TypeScript與相關工具** 與 **TypeScript 與 ES6 語言特性**，可以參考前兩天的[筆記][2]。
+第二堂是保哥介紹 **Angular 2 相關工具**, **TypeScript與相關工具** 與 **TypeScript 與 ES6 語言特性**，可以參考前兩天的[筆記][2]。
 
-另外保哥近日也有新增一篇關於 angular2 的介紹文章 - [前端工程的夢幻逸品：Angular 2 開發框架介紹][3]，裏頭說明 angular2 的特性以及還有一個在 [chanel 9 的演講影片][4]，在 chanel 9 影片中，保哥 1 小時內 demo 如何以 angulr 2 實現 blog 網站，另外也可以參考昨天的[筆記][5]，而今天上課的課程有近8成是差不多的，多了讓大家實戰練習與一些小細節的說明，因此今天的心得筆記，就專注在一些實戰上面的流程與小技巧。
+另外保哥近日也有新增一篇關於 angular2 的介紹文章 - [前端工程的夢幻逸品：Angular 2 開發框架介紹][3]，裏頭說明 angular2 的特性。  
+此外文章中有 typeScript 以 angulr2 為範例的 [chanel 9 演講影片][4]，保哥在 1 小時內 demo 如何使用 angulr 2 實現 blog 網站。  
+我這邊昨天看完有寫一點[筆記][5]，而今天上課的課程感覺有近 8 成和影片演講內容是差不多的，上課是多了讓大家實戰練習與一些小細節的說明。  
+因此今天的心得筆記，就專注在一些實戰上面的流程與小技巧。
 
 ---
 
@@ -25,7 +28,7 @@ categories: ClassNote
 
 ## 遇到問題
 前端開發經常麻煩就是遇到一些執行環境的問題，雖然說 mac 的 OSX 相較於 window 已經比較沒什麼問題，不過今天還是遇到了狀況。  
-因為手癢搬了一下檔案的目錄位置，結果當 server rebuild 卻拋出錯誤，其中關鍵字是 .DS_Store，這東西是個 OSX 的應該類似 cache 或者檔案索引的隱藏目錄，於是提姆哥幫忙網路上有查到相關的解法如下
+因為手癢搬了一下檔案的目錄位置，結果 server rebuild 卻拋出錯誤，其中關鍵字是 .DS_Store，這東西是個 OSX 的應該類似 cache 或者檔案索引的隱藏目錄，在網路上有查到相關的解法如下
 
 ```
 // 禁止.DS_store生成：
@@ -52,13 +55,14 @@ $ ng init
 經過一段時間等待後，乾淨的 angulr2 專案範本就建立好了。  
 
 ### 建立新 component
-接下來使用新增 component 指令 `$ ng g c xxx` 來新增 component，固定會產生相關的4+1個文件檔案, 其中 xxx 是 component 名稱:
+接下來使用新增 component 指令 `$ ng g c xxx` 來新增 component，固定會產生相關的4+1個文件檔案 (其中 xxx 是 component 名稱):
 
 - index.ts
 - xxx.component.ts
 - xxx.component.html
 - xxx.component.css
-- xxx.spec.ts <-(這是單元測試檔案，如果僅是 demo 不用單元測試可以不用理會他。)
+- xxx.spec.ts  
+    (這是單元測試檔案，如果僅是 demo 不用單元測試可以不用理會他)
 
 練習將保哥 blog 靜態網站的 source 搬進 component 裡面去實作，增加 template 到 .html 檔案，增加綁定變數到 .ts 檔案。
 接下來再上層 app.compoent 去 import 新增的 compoent 模組
@@ -69,23 +73,23 @@ import { HeaderComponent } from './header'; // 預設進入點會找資料夾中
 
 > Tip
 
-import 的 from 指定路徑設定不能加副檔名，因為 typescript 用利用 systems 來管理模組，會自動加上副檔名，如果自己加了會報錯。另外 systems js 將會被 **webpack** 所取代，angular 官方已確定將導入 webpack 作為模組管理。
+import 的 from 指定路徑設定不能加副檔名，因為 typescript 會利用 systems 來管理模組，自動加上副檔名，如果自己加了會報錯。另外 systems js 將會被 **webpack** 所取代，angular 官方已確定將導入 webpack 作為模組管理。
 
 
 ### 啟動 Angular 2 開發伺服器
-執行以下指令，會啟動 angular2 開發伺服器，而且當專案有存檔時， Angular CLI 會自動 rebuild 並且頁面自動刷新。
+執行以下指令，會啟動 angular2 開發伺服器，而且當專案有存檔時， Angular CLI 會自動 rebuild 並且 browser sync 自動頁面刷新。
 
 ```
 $ ng serve
 ```
 
-> Tip: 發生錯誤可以捕捉錯誤的地方
+> Tip: angular 執行發生錯誤可以捕捉錯誤的地方
 
 - `$ ns serve` 在 cmd 會秀出錯誤訊息
 - 開發工具 vs code 會飄線表示錯誤
 - Chrome develop tool 的 console 也會有錯誤訊息
 
-Angular2 的錯誤訊息機制，是使用 [Zone][8] 來實現的，因此相較於 Angular1 & React js 來講親民很多。
+Angular2 的錯誤訊息機制，是使用 [Zone][8] 來實現的，因此相較於 Angular1 & React js 親民很多。
 
 
 ## 4 種資料繫結方法 (Binding syntax)
@@ -128,7 +132,7 @@ Angular2 的錯誤訊息機制，是使用 [Zone][8] 來實現的，因此相較
 
 ## 元件的輸入輸出
 在 Component 之間的值互相傳遞的方法，就是透過 `@Input()` 與 `@Output()` 來實現，使用時要 import 內建的 Input, Output 元件。  
-另外值得注意的是，因為 Component 之間的傳遞，在專案日趨肥大而複雜後， in/out put 會變得難以觀察與維護，因此課程最後會介紹一個建立 angualr service 的東西，用來解決傳遞值得問題。
+另外值得注意的是，因為 Component 之間的傳遞，在專案日趨肥大而複雜後， in/output 會變得難以觀察與維護，因此課程最後會介紹一個建立 angualr service 的東西，用來解決傳遞值得問題。
 
 ### 傳入屬性
 在 component 裡面的屬性套上 `@Input()` 後，就可以在*外層元件*用**屬性繫結**傳入資料。
@@ -165,16 +169,16 @@ this.myEvent.emit(data);
 
 ### Angular2 沒有內建 FilterPipe 與 OrderByPipe
 因為在 ng1 這兩個經常被濫用，導致效能低落，另外因為 JS 沒有**傳值**的特性，所以導致經常有 bug 出現，  
-那要怎樣做到過濾功能呢? 自己刻，其實也不難，簡單方法就是結合**事件綁定**，然後將 value 利用 es5 的 .filter 語法過濾資料再處理回傳即可。
+那要怎樣做到過濾功能呢? 自己刻，其實也不難，簡單方法就是結合**事件綁定**，然後將 value 利用 es5 的 .filter 語法過濾資料後，再回傳即可。
 
 # Angular2 相依注入
 
 ## 建立服務元件
-前面在*元件的輸入輸出*有提到在複雜的專案下，過於複雜的 Component in/out put 值得傳遞，會導致可維護性變差，所以這邊可以利用**服務元件**的方式，來從外層注入**值**。
-另外要注意在 main.ts 全域注入服務的注入器是獨體模式(Singleton)，也就是剛執行建立的第一份實力化物件，將會能給所有 component 使用，達到各 component 共用的目的，如果在內層另外注入，則會另外產生新的實例化物件，將可能導致 component 無法從 sevice 取值。
+前面在*元件的輸入輸出*有提到在複雜的專案下，過於複雜的 component in/output 傳遞，會導致可維護性變差，所以這邊可以利用**服務元件**的方式，來從外層注入**值**。
+另外要注意在 main.ts 全域注入服務的注入器是獨體模式(Singleton)，也就是剛執行建立的第一份實例化物件，將能給所有 component 使用，達到各 component 共用的目的，但如果又在內層另外注入，則會另外產生新的實例化物件，將可能導致 component 無法從 sevice 取值。
 
 ## 使用 HTTP 服務元件
-最後因為時間的關係，這段保哥講的比較快，可以參考官方的 [HTTP CLIENT][9] 來實作。
+最後因為時間的關係，這段保哥講的比較快，可以參考官方的 [HTTP CLIENT][9] 來實作練習。
 
 # 相關連結
 - [Angular2 官網](https://angular.io/)
