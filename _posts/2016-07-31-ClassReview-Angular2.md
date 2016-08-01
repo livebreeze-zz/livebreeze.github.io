@@ -3,9 +3,11 @@ layout: post
 title:  "[心得筆記] Angular 2 開發實戰：新手入門"
 date:   2016-07-31 22:05 +0800
 categories: ClassNote
+author: Sean.C
+tag: [classnote, javascript, angular2]
 ---
 
-# 前言
+## 前言
 這篇是今天上完 [《台中》Angular 2 開發實戰：新手入門篇][1] 的課後筆記與心得。  
 
 課程主要內容:
@@ -24,7 +26,7 @@ categories: ClassNote
 
 ---
 
-# Demo 開始
+## Demo 開始
 
 ## 遇到問題
 前端開發經常麻煩就是遇到一些執行環境的問題，雖然說 mac 的 OSX 相較於 window 已經比較沒什麼問題，不過今天還是遇到了狀況。  
@@ -180,18 +182,23 @@ this.myEvent.emit(data);
 ## 使用 HTTP 服務元件
 最後因為時間的關係，這段保哥講的比較快，可以參考官方的 [HTTP CLIENT][9] 來實作練習。
 
-# 相關連結
+## 相關連結
 - [Angular2 官網](https://angular.io/)
 - [Angular2 簡體中文](https://angular.cn/)(官方認可)
 - [Angular2 風格指南](https://angular.io/styleguide)(官方版)
 - [Angualr2 學習資源](https://angular.io/resources/)(官方版)
 - [Angular2 學習資源](https://github.com/timjacobi/angular2-education)(Github社群版)
 - [ng-conf 2016](https://www.youtube.com/playlist?list=PLOETEcp3DkCq788xapkP_OU-78jhTf68j)(YouTube)
+- [Rangle's Angular 2 Training Book](http://angular-2-training-book.rangle.io/)
 
 - [Angular 2 Fundamentals](http://courses.angularclass.com/courses/angular-2-fundamentals)(免費 ng2 課程)
 
 - [TypeScirpt](http://www.typescriptlang.org/)
 - [TypeScript Handbook](https://github.com/zhongsp/TypeScript)(中文版)
+
+- [Angular Augury](https://augury.angular.io/)
+
+- [A curated list of helpful material to start learning Angular 2](https://github.com/timjacobi/angular2-education)
 
 
 [1]: http://www.accupass.com/go/DCT_105015
