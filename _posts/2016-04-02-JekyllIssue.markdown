@@ -3,6 +3,7 @@ layout: post
 title:  "Jekyll 新手問題"
 date:   2016-04-02 20:17:00 +0800
 categories: Jekyll
+tag: [jekyll, github.io]
 ---
 
 最近開始改用 github.io 撰寫部落格，搭配官方建議的開源靜態網頁產生工具 **[jekyll](https://jekyllrb.com/)** (念起來像"結果")，  
@@ -32,3 +33,48 @@ categories: Jekyll
 官方說明：  
 All my posts are gone! Where’d they go!Permalink  
 [http://jekyllrb.com/docs/upgrading/2-to-3/#future-posts](http://jekyllrb.com/docs/upgrading/2-to-3/#future-posts)
+
+
+### 問題二： 如何使用 jekyll 載入 js 檔案
+
+- 所有頁面共用的 js
+    1. 在 `_includes` 資料夾中加入自訂的資料夾 `scripts` (方便管理)
+    2. 在自訂的 `_includes/scirpts` 資料夾加上新的 js 檔案
+    3. 在 `_layout/default.html` 內容加上 scripts tag，並在區塊內載入上面加好的檔案  
+
+```
+// _layouts/default.html
+<script>
+    {% include scripts/base.v0.js %}
+</script>
+``` 
+
+- 不同「文章」載入不同的 js 方式  
+    1. 與上1同
+    2. 與上2同
+    3. 在 _layouts/post.html 最下方載入 post 設定的 post  
+    4. 在需要額外載入 js 的 _posts/文章 設定加上 js 來源 
+
+```
+// step 3
+// _layouts/post.html
+<script>
+    { % for js in page.jsarr % }
+        <script>
+            { % include {{js}} % }
+        </script>
+    { % endfor % }
+</script>
+
+// 注意, `{`與`%` 中間沒有空白
+```
+
+```
+// step 4
+    ---
+    layout: post
+    jsarr: [scripts/test.js]
+    ---
+```
+
+參考資料: [Using Custom Javascript In Jekyll Blogs](http://etosch.github.io/2016/03/09/using-custom-javascript-in-jekyll-blogs.html)

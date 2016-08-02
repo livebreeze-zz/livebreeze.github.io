@@ -23,3 +23,9 @@ layout: default
 </article>
 
 {% include DISQUS.html %}
+
+{% for js in page.jsarr %}
+    <script>
+        {% include {{js}} %}
+    </script>
+{% endfor %}

@@ -3,15 +3,25 @@
  */
 .site-header {
     background-color: cadetblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    height: 72px;
+
+    transition: height 1s;
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: relative;       
     
     a.site-title, a.page-link {
         color:azure;
+    }
+
+    &:hover{
+        height: 60vh;
     }
 }
 
@@ -22,7 +32,9 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
+    &:hover {
+        text-decoration: none;
+    }
     &,
     &:visited {
         color: $grey-color-dark;
@@ -197,6 +209,11 @@
 .post-link {
     display: block;
     font-size: 24px;
+
+    &:hover {
+        color: $post-link-brand-color;
+        text-decoration: none;
+    }
 }
 
 

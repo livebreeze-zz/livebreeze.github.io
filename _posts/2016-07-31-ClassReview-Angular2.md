@@ -5,6 +5,7 @@ date:   2016-07-31 22:05 +0800
 categories: ClassNote
 author: Sean.C
 tag: [classnote, javascript, angular2]
+bgimgurl: https://raw.githubusercontent.com/livebreeze/BlogImages/e5ae2b0d2d34430043ac20879b52243eb0067a9e/Images2016/20160803_PostBGImg.jpg
 ---
 
 ## 前言
