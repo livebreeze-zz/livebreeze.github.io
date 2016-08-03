@@ -222,7 +222,7 @@
  * Posts
  */
  .post {
-     background-color: #fff;
+     background-color: #f3f2ee;
      padding: 2% 4% 4%;
      margin-bottom:20px;
      border-radius: 4px;
@@ -245,10 +245,11 @@
 }
 
 .post-content {
+    text-shadow: 0 1px 0 #fff;
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: 34px;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -256,7 +257,7 @@
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 28px;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -264,10 +265,19 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 24px;
 
         @include media-query($on-laptop) {
-            font-size: 18px;
+            font-size: 16px;
+        }
+    }
+
+    p {        
+        font-size: 18px;
+        line-height: 1.8em;
+
+        @include media-query($on-laptop) {
+            font-size: 12px;
         }
     }
 }

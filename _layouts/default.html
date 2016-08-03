@@ -20,10 +20,12 @@
     </script>
    
 
+    {% if jekyll.environment == "production" %}
     <!-- google analysis -->
     <script>
         {% include scripts/ga.v0.js %}
     </script>
+    {% endif %}
 
   </body>
 

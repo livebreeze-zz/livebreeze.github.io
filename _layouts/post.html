@@ -22,7 +22,9 @@ layout: default
 
 </article>
 
-{% include DISQUS.html %}
+{% if jekyll.environment == "production" %}
+    {% include DISQUS.html %}
+{% endif %}
 
 {% for js in page.jsarr %}
     <script>
