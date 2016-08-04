@@ -268,7 +268,7 @@
         font-size: 24px;
 
         @include media-query($on-laptop) {
-            font-size: 16px;
+            font-size: 18px;
         }
     }
 
@@ -277,7 +277,7 @@
         line-height: 1.8em;
 
         @include media-query($on-laptop) {
-            font-size: 12px;
+            font-size: 16px;
         }
     }
 }
