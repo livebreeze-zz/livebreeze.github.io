@@ -2,6 +2,7 @@
 layout: page
 title: About me
 permalink: /about/
+bgimgurl: https://raw.githubusercontent.com/livebreeze/BlogImages/d795a35325249f42cdff8ea5434baa374b1756a6/Images2016/20160811_AboutMeBg.jpg
 ---
 
 Hi, my name is Sean Chen.
