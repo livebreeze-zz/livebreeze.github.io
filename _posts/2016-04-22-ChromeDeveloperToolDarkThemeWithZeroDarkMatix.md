@@ -5,6 +5,18 @@ date:   2016-04-22 00:05 +0800
 categories: Tools
 ---
 
+# Update
+
+> 2017/02/02 更新
+
+最近發現 Chrome 已經有內建黑暗版的開發介面了，設定也非常的簡單(就在第一個設定 XD)，不過還是截了兩張圖來見證一下
+
+- Chrome 內建的顯示樣式  
+![ChromeDevToolDarkTheme](https://raw.githubusercontent.com/livebreeze/BlogImages/master/Images2017/20170202_ChromeDevToolDarkTheme.jpg)
+
+- 設定  
+![ChromeDevToolDarkThemeSettings](https://raw.githubusercontent.com/livebreeze/BlogImages/master/Images2017/20170202_ChromeDevToolDarkThemeSettings.jpg)
+
 # 前言
 
 身為網頁開發人員，長時間盯著開發工具鐵定是避免不了，而螢幕預設的白底總是讓人容易眼睛酸澀，
