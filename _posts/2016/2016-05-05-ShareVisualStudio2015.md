@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[心得筆記] Visual Studio 2015 開發與偵錯技巧 (保哥課程)"
-date:   2017-03-18 20:05 +0800
+date:   2016-05-05 20:05 +0800
 categories: ClassNote
 author: Sean.C
 tag: [classnote, visual studio]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[心得筆記] Angular 2 開發實戰：新手入門篇 第一階段 線上課程"
+title:  "[心得筆記] Angular 2 開發實戰：新手入門篇 第一階段 (保哥線上課程)"
 date:   2016-07-27 23:05 +0800
 categories: ClassReview
 ---

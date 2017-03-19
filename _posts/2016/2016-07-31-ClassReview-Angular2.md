@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[心得筆記] Angular 2 開發實戰：新手入門"
+title:  "[心得筆記] Angular 2 開發實戰：新手入門 (保哥課程)"
 date:   2016-07-31 22:05 +0800
 categories: ClassNote
 author: Sean.C

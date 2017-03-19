@@ -11,6 +11,10 @@ tag: [jekyll, github.io]
 雖然官方也有 [Guide](https://jekyllrb.com/docs/home/) 可以參考學習，不過都是英文... 讀起來有些睏，  
 所以就是一邊使用一邊查資料，從問題中學習 @_@a
 
+> 2017/03/19 Update   
+> 下面有熱心的 Rhadow's 分享中文的說明，大致上剛開始設定 Github.io 與 Jekyll 是很好的參考文章喔   
+> [Jekyll x Github x Blog (Part 1)](https://rhadow.github.io/2015/02/18/Jekyll-x-Github-x-Blog-Part1/)  
+
 ### 問題一：為何我在 _posts 的文章沒有產生出來
 檢查　post 開頭的文章時間設定是否偷跑到未來了，  
 假設目前時間是 `2016/04/02 20:12:00`，則 `2016/04/02 20:12:00` 之後的文章就不會產生出來 　　
