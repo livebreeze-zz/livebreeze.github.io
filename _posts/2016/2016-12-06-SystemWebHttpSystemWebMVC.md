@@ -4,7 +4,7 @@ title:  "[TechNote] System.Web.Http 和 System.Web.Mvc"
 date:   2016-12-06 21:05 +0800
 categories: TechNote
 author: Sean.C
-tag: [technote, C#, MVC]
+tag: [TechNote, CSharp, MVC]
 bgimgurl: https://raw.githubusercontent.com/livebreeze/BlogImages/e5ae2b0d2d34430043ac20879b52243eb0067a9e/Images2016/20160803_PostBGImg.jpg
 ---
 

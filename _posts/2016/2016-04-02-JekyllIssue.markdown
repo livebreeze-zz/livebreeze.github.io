@@ -3,7 +3,7 @@ layout: post
 title:  "Jekyll 新手問題"
 date:   2016-04-02 20:17:00 +0800
 categories: Jekyll
-tag: [jekyll, github.io]
+tag: [Jekyll, Githubio]
 ---
 
 最近開始改用 github.io 撰寫部落格，搭配官方建議的開源靜態網頁產生工具 **[jekyll](https://jekyllrb.com/)** (念起來像"結果")，  
