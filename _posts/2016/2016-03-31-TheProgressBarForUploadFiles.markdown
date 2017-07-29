@@ -2,7 +2,7 @@
 layout: post
 title:  "建立檔案上傳 progress 進度條"
 date:   2016-03-31 21:00:00
-categories: LearningNote
+categories: TechNote
 ---
 
 ## Backgroud

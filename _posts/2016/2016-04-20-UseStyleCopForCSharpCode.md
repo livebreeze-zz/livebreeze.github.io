@@ -2,7 +2,7 @@
 layout: post
 title:  "Review - 保哥線上講堂：利用 StyleCop 撰寫一致的 C# 程式碼風格"
 date:   2016-04-20 23:59 +0800
-categories: ClassReview
+categories: ClassNote
 ---
 
 去年無意間翻找保哥開的課程，發現有一堂線上課程，是關於定義團隊 C# 撰寫風格的 StyleCop，剛好對於 StyleCop 有興趣，又懶得翻閱英文文件，當然是直接上課最快拉!  

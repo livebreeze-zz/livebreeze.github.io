@@ -2,7 +2,7 @@
 layout: post
 title:  "IIS 無法啟用 - HTTP Error 500.19"
 date:   2016-03-18 10:28:00
-categories: Server
+categories: TechNote
 ---
 
 今天在新的 window 10 想要架設 IIS 站點，依照慣例，開啟 windows 功能("Turn windows features on or off" )，然後將 IIS 開啟~

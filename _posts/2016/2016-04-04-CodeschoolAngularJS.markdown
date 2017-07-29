@@ -2,7 +2,7 @@
 layout: post
 title:  "JavaScript online class by Codeschool"
 date:   2016-04-04 16:50 +0800
-categories: ClassReview
+categories: ClassNote
 ---
 
 現在線上免費課程資源真的好多，而且越來越棒，不僅僅影片和 slides 做的不錯，

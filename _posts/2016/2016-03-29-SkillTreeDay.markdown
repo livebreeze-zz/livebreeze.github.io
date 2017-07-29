@@ -2,7 +2,7 @@
 layout: post
 title:  "Skill Tree Day 會員專屬研討會"
 date:   2016-03-26 22:28:00
-categories: ClassReview
+categories: ClassNote
 ---
 
 這次參加的活動是由 SKILL TREE 舉辦的舊生回歸活動，只要參加過Skill tree 活動就可以獲得免費上課資格，

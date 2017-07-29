@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll 新手問題"
 date:   2016-04-02 20:17:00 +0800
-categories: Jekyll
+categories: Tools
 tag: [Jekyll, Githubio]
 ---
 

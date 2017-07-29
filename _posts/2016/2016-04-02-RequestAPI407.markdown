@@ -2,7 +2,7 @@
 layout: post
 title:  "調用 public API 返回 407"
 date:   2016-04-02 08:28:00
-categories: ASPNET
+categories: TechNote
 ---
 
 最近 Howard 在練習調用 youbike 的 public API  
