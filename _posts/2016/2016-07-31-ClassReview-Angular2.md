@@ -98,9 +98,12 @@ Angular2 的錯誤訊息機制，是使用 [Zone][8] 來實現的，因此相較
 ## 4 種資料繫結方法 (Binding syntax)
 
 ### 內嵌繫結 (interpolation)
+*雙大括號包起來
+
 ``` 
-{ { property } }
+\{\{ property \}\}
 ```
+
 
 ### 屬性繫結 (Property Binding)
 ```

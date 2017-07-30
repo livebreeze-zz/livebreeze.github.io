@@ -19,10 +19,7 @@
     a.site-title, a.page-link {
         color:azure;
         text-shadow: 1px 1px 8px #303030;
-    }
-
-    &:hover{
-        height: 60vh;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -242,7 +239,7 @@
 
 .post-title {
     font-size: 34px;
-    letter-spacing: -1px;
+    letter-spacing: 0.5px;
     line-height: 1.4;
 
     @include media-query($on-laptop) {

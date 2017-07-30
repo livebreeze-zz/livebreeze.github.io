@@ -3,13 +3,13 @@ layout: page
 title: Tag Cloud
 ---
 
-<ul class="tag-cloud">
+<div>
 {% assign sorted_tags = (site.tags | sort: 0) %}
 {% for tag in sorted_tags %}
-  <li>
-    <a href="/tags/{{ tag[0] }}">
-      {{ tag | first }} ({{ tag | last | size }})
+ <div>
+    <a class="action-button shadow animate green" href="/tags/{{ tag[0] }}" style="font-size: {{ tag | last | size | times: 400 | divided_by: site.tags.size | plus: 35  }}%" draggable="false">
+     {{ tag | first }} <small>({{ tag | last | size }})</small>
     </a>
-  </li>
+</div>
 {% endfor %}
-</ul>
+</div>

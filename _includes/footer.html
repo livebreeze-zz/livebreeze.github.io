@@ -2,17 +2,16 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">點點滴滴，匯聚成河</h2>
+    <h2 class="footer-heading">{{ site.description }}</h2>
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <!-- <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>Sean Chen</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
-      </div>
+      </div> -->
 
-      <div class="footer-col footer-col-2">
+      <!-- <div class="footer-col footer-col-2">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -20,15 +19,15 @@
           </li>
           {% endif %}
         </ul>
-      </div>
+      </div> -->
 
-      <div class="footer-col footer-col-3">
+      <!-- <div class="footer-col footer-col-3">
         <p>{{ site.description }}</p>
-      </div>
+      </div> -->
       
-       <div class="footer-col footer-col-12">
-        <p>Copyright &copy; {{ site.time | date: '%Y' }} by <a href="https://www.facebook.com/livebreeze" target="_blank">livebreeze</a></p>
-      </div>
+      <div class="footer-col footer-col-12">
+        <p>Copyright &copy; {{ site.time | date: '%Y' }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>     
     </div>
 
   </div>
