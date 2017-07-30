@@ -24,10 +24,8 @@ So, welcome to share the world with me!
 
 Hi 大家好，
 
-我是阿興，目前在台中任職 Web Developer，主要偏向 UI 的部分，
+我是阿興，目前在台中任職 Web Developer
 
 這邊紀錄一些學習過程，並且希望藉由分享，更進一步吸收所學，
 
 碼農們一起用力耕耘吧!
-
-<iframe src="//slides.com/livebreeze/me/embed?style=light" width="680" height="542" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
