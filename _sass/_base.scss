@@ -144,7 +144,7 @@ blockquote {
     border-left: 4px solid $grey-color-light;
     padding: $spacing-unit/4 $spacing-unit/2;
     font-size: 15px;
-    letter-spacing: -1px; // font-style: italic;
+    letter-spacing: 0.3px; // font-style: italic;
     > :last-child {
         margin-bottom: 0;
     }
@@ -160,7 +160,7 @@ blockquote {
 
 pre,
 code {
-    font-size: 15px;
+    font-size: 14px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #555;
@@ -247,7 +247,7 @@ pre {
     color: #828282;
     display: inline-block;
     font: 600 0.625em/1.5 Helvetica, Arial, sans-serif;
-    letter-spacing: -0.025em;
+    letter-spacing: 0.02em;
     margin-bottom: 0.6em;
     margin-left: 0.5em;
     margin-right: 0.3em;

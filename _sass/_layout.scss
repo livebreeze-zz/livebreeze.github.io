@@ -27,7 +27,7 @@
     font-size: 26px;
     font-weight: 300;
     line-height: 48px;
-    letter-spacing: -1px;
+    letter-spacing: 0.5px;
     margin-bottom: 0;
     float: left;
     &:hover {
@@ -279,7 +279,7 @@
         font-size: 18px;
 
         @include media-query($on-laptop) {
-            font-size: 14px;
+            font-size: 15px;
         }
     }
 
@@ -288,7 +288,7 @@
         line-height: 1.6em;
 
         @include media-query($on-laptop) {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 }
