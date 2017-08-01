@@ -9,7 +9,7 @@ title: Tag Cloud
             <div class="blog-tags"> 
                 {% assign tags = site.tags | sort %}
                 {% for tag in tags %}
-                <a href="#{{ tag[0] | slugify }}" class="action-button shadow animate green" style="font-size: {{ tag | last | size  |  times: 400 | divided_by: site.tags.size | plus: 35  }}%"> 
+                <a href="#{{ tag[0] | slugify }}" class="action-button shadow animate green" style="font-size: {{ tag | last | size  |  times: 400 | divided_by: site.tags.size | plus: 25  }}%"> 
                     {{ tag | first }} <small>({{ tag | last | size }})</small>
                 </a>
                 {% endfor %}
