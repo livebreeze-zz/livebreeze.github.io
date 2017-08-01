@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "[心得筆記] Channel 9 - 使用 TypeScript 駕馭 Web 世界的脫韁野馬： 以 Angular 2 開發框架為例(保哥)"
-date:   2016-07-30 23:05 +0800
+date:   2016-07-30 23:07 +0800
 categories: ClassNote
+author: Sean.C
+tag: [ClassNote, Javascript, Angular2]
 ---
 
 # 前言

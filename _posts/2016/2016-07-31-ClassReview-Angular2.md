@@ -206,10 +206,10 @@ this.myEvent.emit(data);
 
 
 [1]: http://www.accupass.com/go/DCT_105015
-[2]: {% post_url 2016-07-27-ClassReview-Angular2-DevGetStartedClass %}
+[2]: {% post_url 2016/2016-07-27-ClassReview-Angular2-DevGetStartedClass %}
 [3]: http://blog.miniasp.com/post/2016/07/26/Introduction-to-Angular-2.aspx
 [4]: https://channel9.msdn.com/Events/AzureDevDay/2016/A02?ocid=player
-[5]: {% post_url 2016-07-30-Ch9Class_UseTypeScriptToDevelopAngular2 %}
+[5]: {% post_url 2016/2016-07-30-Ch9Class_UseTypeScriptToDevelopAngular2 %}
 [6]: https://github.com/livebreeze/Angular2Demo
 [7]: https://github.com/miniasp/ng2demo-0731
 [8]: https://angular.io/docs/ts/latest/glossary.html#!#zone
